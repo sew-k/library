@@ -20,7 +20,8 @@ public class Book {
     @ManyToOne(
             cascade = CascadeType.PERSIST
     )
-    @JoinColumn(name = "TITLE_ID", nullable = false)
+//    @JoinColumn(name = "TITLE_ID", nullable = false)
+    @JoinColumn(name = "TITLE_ID")
     private Title title;
     @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "BORROWING_ID")
